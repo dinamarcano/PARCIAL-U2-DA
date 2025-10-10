@@ -16,7 +16,7 @@ export default function BankManager() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Cargar cuentas iniciales (no persistente)
+    // 
     setAccounts(initialAccounts.map((a) => ({ ...a })));
   }, []);
 
@@ -107,7 +107,7 @@ export default function BankManager() {
       </section>
 
       <footer className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
-        Nota: los cambios no son persistentes — al refrescar se recargan las cuentas del JSON inicial.
+        
       </footer>
     </div>
   );
